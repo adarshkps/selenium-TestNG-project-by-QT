@@ -20,23 +20,20 @@ public class ABTests extends SetUp {
 			super();  //read --> browser_val=chrome, url--> internethel
 			initialization(); // opend chrome url,
 			abPage=new ABTestPage(driver);
-			abPage.clickOnABtestlink();
-			
+			abPage.clickOnABtestlink();		
 		}
-		
 		
 		//verify that the header of AbTest page is "A/B Test Control"
 		@Epic("Ep001")
 		@Feature("Index page")
 		@Test
 		public void validateHeader()
-		{
-		   
+		{   
 		   String act=abPage.getHeader();
 		   act=act.substring(0, 3);
 		// System.out.println("Act --> "+act);
-		   Assert.assertEquals(act,"A/B");
-		  
+		   Assert.assertEquals(act,"A/B");	
+		   Assert.assertTrue(false);
 		}
 		
 		//2.verify that the paragraph on AbTest page starts with "Also known as split testing"
@@ -46,15 +43,11 @@ public class ABTests extends SetUp {
 		public void verifyParaStartsWithText()
 		{
 		//	Assert.assertEquals(abPage.getp, "Also known as split testing");
-			
 			String exp="Also known as split testing";
 			String act=abPage.getPara();
 			boolean b=act.startsWith(exp);
-			Assert.assertTrue(b);
-			
+			Assert.assertFalse(b);			
 		}
-		
-		
 		//3. verify that the paragraph on AbTest page ends  with "as a click-through)."
 		@Epic("Ep001")
 		@Feature("Featrue 2")
@@ -73,8 +66,6 @@ public class ABTests extends SetUp {
 			
 		//	Assert.assertEquals(exp, abPage.getPara());
 		}
-		
-		
 		//4 . verify that Abtestpage has  Elemental Selenium button
 		@Epic("Ep002")
 		@Feature("Index Page")
@@ -85,8 +76,7 @@ public class ABTests extends SetUp {
 		{
 			boolean b=abPage.eleSelenium();
 			Assert.assertTrue(b);
-			Reporter.log("Element Selenium Button is Present");
-			  
+			Reporter.log("Element Selenium Button is Present");  
 		}
 		
 

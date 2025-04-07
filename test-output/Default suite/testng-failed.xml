@@ -5,7 +5,7 @@
     <classes>
       <class name="com.internetherokuapp.tests.ABTests">
         <methods>
-          <include name="verifyParaEndsWith"/>
+          <include name="validateHeader"/>
           <include name="verifyParaStartsWithText"/>
         </methods>
       </class> <!-- com.internetherokuapp.tests.ABTests -->
