@@ -33,7 +33,8 @@ public class ABTests extends SetUp {
 		   act=act.substring(0, 3);
 		// System.out.println("Act --> "+act);
 		   Assert.assertEquals(act,"A/B");	
-		   Assert.assertTrue(false);
+		   Assert.assertTrue(false); 	// this will fail cause we have written code
+		   //the should fail the test
 		}
 		
 		//2.verify that the paragraph on AbTest page starts with "Also known as split testing"
@@ -47,6 +48,7 @@ public class ABTests extends SetUp {
 			String act=abPage.getPara();
 			boolean b=act.startsWith(exp);
 			Assert.assertFalse(b);			
+			//this test will also fails
 		}
 		//3. verify that the paragraph on AbTest page ends  with "as a click-through)."
 		@Epic("Ep001")
