@@ -12,7 +12,7 @@ import utils.elements;
 public class ABTestPage extends SetUp {
 	public ABTestPage(WebDriver driver)
 	{
-		PageFactory.initElements(driver,this);
+	   PageFactory.initElements(driver,this);
 	}
 	@FindBy(xpath="//a[text()='A/B Testing']")
 	private WebElement ABtestlink;
