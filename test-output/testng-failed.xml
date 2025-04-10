@@ -5,8 +5,7 @@
     <classes>
       <class name="com.internetherokuapp.tests.AorremoveTests">
         <methods>
-          <include name="clickOnAddEle"/>
-          <include name="validateDeleteisDisplayed"/>
+          <include name="EleSeleClick"/>
         </methods>
       </class> <!-- com.internetherokuapp.tests.AorremoveTests -->
     </classes>

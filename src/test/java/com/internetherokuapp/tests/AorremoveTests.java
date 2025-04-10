@@ -2,13 +2,15 @@ package com.internetherokuapp.tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.reporters.jq.Main;
 
 import com.internetherokuapp.base.SetUp;
 import com.internetherokuapp.pages.addOrRemoveElement;
 
 public class AorremoveTests extends SetUp{
 	static addOrRemoveElement ARE;
-	public AorremoveTests()
+	
+	 AorremoveTests()
 	{
 		super();
 		initialization();
@@ -35,6 +37,22 @@ public class AorremoveTests extends SetUp{
 	{
 		boolean b=ARE.delteBtnPre();
 		Assert.assertTrue(b);
+	}
+	@Test
+	public void elePre()
+	{
+		boolean b=ARE.EleSelPre();
+		Assert.assertTrue(b);
+	}
+	@Test
+	public void EleSeleClick()
+	{
+		
+		ARE.EleSelClick();
+		String exp=driver.getTitle();
+		String act="Home | Elemental Selenium";
+		Assert.assertEquals(act,exp);
+		// this test case is failing so it is a defect in the the-internet-herokuapp
 	}
 	
 	

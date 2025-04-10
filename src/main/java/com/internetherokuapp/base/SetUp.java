@@ -22,6 +22,7 @@ public class SetUp {
 	public static String URL;
 	public static WebDriver driver;
 	
+	
 	public SetUp()
 	{
 		file=new File("./configurations/config.properties");
@@ -61,7 +62,7 @@ public class SetUp {
 		}
 		driver.get(URL);
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(waits.page_load_time));
-		driver.manage().window().maximize();
+	//	driver.manage().window().maximize();
 	}
 	
 }

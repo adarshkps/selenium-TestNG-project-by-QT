@@ -10,7 +10,7 @@ import com.internetherokuapp.base.SetUp;
 import utils.elements;
 
 public class addOrRemoveElement extends SetUp {
-
+	
 	public addOrRemoveElement(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
@@ -39,6 +39,18 @@ public class addOrRemoveElement extends SetUp {
 	public boolean delteBtnPre()
 	{
 		return delete.isDisplayed();
+	}
+	@FindBy(xpath="//a[text()='Elemental Selenium']")
+	private WebElement elementalSeleniumPre;
+	public boolean EleSelPre()
+	{
+		return elementalSeleniumPre.isDisplayed();
+	}
+	@FindBy(xpath="//a[text()='Elemental Selenium']")
+	private WebElement elementalSeleniumClick;
+	public void EleSelClick()
+	{
+		 elementalSeleniumClick.click();
 	}
 	
 }
