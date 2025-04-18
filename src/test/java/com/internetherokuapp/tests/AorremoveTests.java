@@ -2,13 +2,15 @@ package com.internetherokuapp.tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.reporters.jq.Main;
 
 import com.internetherokuapp.base.SetUp;
 import com.internetherokuapp.pages.addOrRemoveElement;
 
+import utils.elements;
+
 public class AorremoveTests extends SetUp{
 	static addOrRemoveElement ARE;
+	
 	
 	 AorremoveTests()
 	{
@@ -47,7 +49,6 @@ public class AorremoveTests extends SetUp{
 	@Test
 	public void EleSeleClick()
 	{
-		
 		ARE.EleSelClick();
 		String exp=driver.getTitle();
 		String act="Home | Elemental Selenium";

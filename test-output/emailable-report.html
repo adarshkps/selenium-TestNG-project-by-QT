@@ -8,45 +8,43 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">301</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">8</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">486</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.internetherokuapp.tests.AorremoveTests</td><td><a href="#m0">EleSeleClick</a></td><td rowspan="1">1744307687930</td><td rowspan="1">185</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.internetherokuapp.tests.AorremoveTests</td><td><a href="#m0">EleSeleClick</a></td><td rowspan="1">1744781006318</td><td rowspan="1">33</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.internetherokuapp.tests.ABTests</td><td><a href="#m1">validateHeader</a></td><td rowspan="1">1744781006070</td><td rowspan="1">83</td></tr><tr class="passedeven"><td><a href="#m2">verifyEleSeleniumBtnIsPres</a></td><td rowspan="1">1744781006216</td><td rowspan="1">36</td></tr><tr class="passedeven"><td><a href="#m3">verifyParaEndsWith</a></td><td rowspan="1">1744781006257</td><td rowspan="1">23</td></tr><tr class="passedeven"><td><a href="#m4">verifyParaStartsWithText</a></td><td rowspan="1">1744781006284</td><td rowspan="1">31</td></tr><tr class="passedodd"><td rowspan="4">com.internetherokuapp.tests.AorremoveTests</td><td><a href="#m5">clickOnAddEle</a></td><td rowspan="1">1744781006358</td><td rowspan="1">54</td></tr><tr class="passedodd"><td><a href="#m6">elePre</a></td><td rowspan="1">1744781006415</td><td rowspan="1">42</td></tr><tr class="passedodd"><td><a href="#m7">validateDeleteisDisplayed</a></td><td rowspan="1">1744781006461</td><td rowspan="1">20</td></tr><tr class="passedodd"><td><a href="#m8">verifyHeaderisDisplayed</a></td><td rowspan="1">1744781006484</td><td rowspan="1">20</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.internetherokuapp.tests.AorremoveTests#EleSeleClick</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [The Internet] but found [Home | Elemental Selenium]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at com.internetherokuapp.tests.AorremoveTests.EleSeleClick(AorremoveTests.java:54)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+<h2>Test</h2><h3 id="m0">com.internetherokuapp.tests.AorremoveTests#EleSeleClick</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.InvalidElementStateException: invalid element state
+  (Session info: chrome=135.0.7049.95)
+Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8b68ef886d6c027366288737bbd6bb16, clearElement {id=f.16BCC1AE3CAC5FF91BE45BD6CB9513A2.d.CBA566D9C81C32F007148AE7C9D13C36.e.9}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\Adarsh\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57810}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57810/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (8b68ef886d6c027366288737bbd6bb16)] -&gt; xpath: //a[text()=&apos;Elemental Selenium&apos;]]
+Session ID: 8b68ef886d6c027366288737bbd6bb16
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:129)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.clear(Unknown Source)
+	at utils.elements.Myclear(elements.java:25)
+	at com.internetherokuapp.pages.addOrRemoveElement.EleSelClick(addOrRemoveElement.java:53)
+	at com.internetherokuapp.tests.AorremoveTests.EleSeleClick(AorremoveTests.java:52)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.internetherokuapp.tests.ABTests#validateHeader</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.internetherokuapp.tests.ABTests#verifyEleSeleniumBtnIsPres</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Element Selenium Button is Present</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.internetherokuapp.tests.ABTests#verifyParaEndsWith</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Paragraph has the particular text</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.internetherokuapp.tests.ABTests#verifyParaStartsWithText</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.internetherokuapp.tests.AorremoveTests#clickOnAddEle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.internetherokuapp.tests.AorremoveTests#elePre</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.internetherokuapp.tests.AorremoveTests#validateDeleteisDisplayed</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.internetherokuapp.tests.AorremoveTests#verifyHeaderisDisplayed</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

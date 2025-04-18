@@ -31,7 +31,6 @@ public class mylisteners extends SetUp implements ITestListener{
 		try {
 			FileUtils.copyFile(file, new File("./screenshots/scr"+str4+".png"));
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}		
 		

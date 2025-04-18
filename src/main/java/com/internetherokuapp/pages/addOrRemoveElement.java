@@ -10,7 +10,7 @@ import com.internetherokuapp.base.SetUp;
 import utils.elements;
 
 public class addOrRemoveElement extends SetUp {
-	
+	elements ele=new elements();
 	public addOrRemoveElement(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
@@ -32,7 +32,7 @@ public class addOrRemoveElement extends SetUp {
 	private WebElement addElement;
 	public void addEle()
 	{
-		addElement.click();
+		ele.Myclick(addElement);
 	}
 	@FindBy(xpath="//button[@class='added-manually']")
 	private WebElement delete;
@@ -50,7 +50,7 @@ public class addOrRemoveElement extends SetUp {
 	private WebElement elementalSeleniumClick;
 	public void EleSelClick()
 	{
-		 elementalSeleniumClick.click();
+		ele.Myclear(elementalSeleniumClick);
 	}
 	
 }
