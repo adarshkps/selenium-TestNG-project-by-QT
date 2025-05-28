@@ -52,11 +52,10 @@ public class AorremoveTests extends SetUp{
 		ARE.EleSelClick();
 		String exp=driver.getTitle();
 		String act="Home | Elemental Selenium";
-		Assert.assertEquals(act,exp);
+		Assert.assertEquals(exp, act);
 		// this test case is failing so it is a defect in the the-internet-herokuapp
 	}
 	
 	
 
-	
 }

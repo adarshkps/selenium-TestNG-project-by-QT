@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.internetherokuapp.tests.AorremoveTests">
+      <class name="com.internetherokuapp.tests.ABTests">
         <methods>
-          <include name="EleSeleClick"/>
+          <include name="verifyParaEndsWith"/>
         </methods>
-      </class> <!-- com.internetherokuapp.tests.AorremoveTests -->
+      </class> <!-- com.internetherokuapp.tests.ABTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
